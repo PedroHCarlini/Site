@@ -28,7 +28,7 @@ header{
     align-items: flex-start;
     gap: 2rem;
     height: 100vh;
-    background-image: url(../assets/image/dev.jpg);
+    background-image: url(../image/dev.jpg);
     background-size: cover;
     color: var(--color-default);
     /* shorthand */
