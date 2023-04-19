@@ -8,10 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameFuzz</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 
 <body> 
+
+    <div class="hamburguer">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#secao-apresentacao">
+                    <i class="fa-solid fa-user"></i>
+                    Apresentação
+                </a>
+            </li>
+            <li>
+                <a href="#secao-projetos">
+                    <i class="fa-solid fa-code"></i>
+                    Projetos
+                </a>
+            </li>
+            <li>
+                <a href="#secao-orcamento">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Orçamento
+                </a>
+            </li>
+        </ul>
+    </nav>
     
     <header>
         <h1>GameFuzz</h1>
@@ -20,7 +58,7 @@
     </header>
 
     <section id="secao-apresentacao">
-        <img class="avatar" src="https://github.com/Pedrohcarlini.png" alt="avatar">
+        <img class="avatar large-only" src="https://github.com/Pedrohcarlini.png" alt="avatar">
         <div id="texto-apresentacao">
             <h2></h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
@@ -85,6 +123,7 @@
     </section>
 
     <script src="../assets/js/script.js"></script>
+    <script src="./assets/js/menu.js"></script>
 </body>
 
 </html>
