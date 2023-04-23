@@ -108,6 +108,7 @@ h1 {
 }
 
 h2{
+    font-size: clamp(3vw, 5vw, 6vw);
     font-size: 4.4rem;
 }
 
@@ -139,7 +140,7 @@ section {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    animation: zoom 10s ease-in-out;
+    animation: zoom 5s ease-in-out;
 }
 
 @keyframes zoom{
@@ -162,7 +163,11 @@ section {
     display: flex;
     flex-direction: column;
     padding: 4rem;
-    background-color: #828282;
+    background: linear-gradient(320deg, #c300d4,#410083) ;
+}
+
+#secao-projetos h2{
+    color: #FFFFFF;
 }
 
 #secao-projetos ul{
@@ -199,13 +204,21 @@ section {
     gap: 1rem;
 }
 
-.card-info h4{
+.card-info p{
+    color: #FFF;
+}
+
+.card-info h2{
+    color:#FFFFFF
+}
+
+.card-info h3{
     color: #c36eff;
 }
 
 #secao-projetos li:hover .card-info{
     opacity: 1;
-    bottom: 20%;
+    bottom: 10%;
 }
 
 #secao-projetos li:hover .card-image img{
@@ -216,15 +229,15 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #212121;
+    height: 150vh;
+    background: linear-gradient(#c300d4,#890096,#2a0542 ,#281535,#000000);
 }
 
 #secao-orcamento form{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     justify-items: start;
-    row-gap: 1rem;
+    row-gap: 2rem;
     padding: 4rem 2rem;
     background-color: #FFF;
     border-radius: 10px;
@@ -232,8 +245,10 @@ section {
     font-size: 1.6rem;
 }
 
-#secao-orcamento output{
-    grid-column: 2;
+
+
+#secao-orcamento label{
+    color: #59429d
 }
 
 #secao-orcamento h3{
@@ -248,15 +263,123 @@ section {
 
 input[type=number]{
     padding: .5rem;
-    background-color: #949494;
+    background-color: #59429d;
     color: var(--color-default);
     border: none;
     border-radius: .3rem;
 }
 
+#titulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 7%;
+} 
+
+
+#subtitulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 10%;
+} 
+
+#check{
+    display: inline-block;
+}
+
+
+fieldset {
+    border: 0;
+}
+
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+
+.grupo:after {
+    clear: both;
+}
+
+
+.campo {
+    margin-bottom: 1em;
+}
+
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+
+.campo select option {
+    padding-right: 1em;
+}
+
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+
+.botao1 {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+.botao1:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+
+.botao1, select{
+    cursor: pointer;
+}
+
+
 @media (max-width: 900px){
+
     #secao-projetos ul{
         flex-direction: column;
+        
     }
     .large-only{
         display: none;
@@ -265,5 +388,8 @@ input[type=number]{
     #secao-orcamento form{
         grid-template-columns: 1fr;
     }
-}
 
+    #texto-apresentacao p{
+        font-size: 5vw;
+    }
+}

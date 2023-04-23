@@ -53,72 +53,118 @@
     
     <header>
         <h1>GameFuzz</h1>
-        <span>O Maior portal de games e programação da América latina</span>
+        <h2>O Maior Site de programadores para os seus games da América Latina</h2>
+        <p>Onde os seus sonhos e sua imaginação se tornam reias dentro do mundo de jogos.</p>
         <a href="#secao-apresentacao" class="botao">Saiba mais</a>
     </header>
 
     <section id="secao-apresentacao">
         <img class="avatar large-only" src="https://github.com/Pedrohcarlini.png" alt="avatar">
         <div id="texto-apresentacao">
-            <h2></h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
-                eligendi
-                atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta.</p>
-            <a href="#secao-projetos" class="botao">projetos</a>
+            <p>A maioria das pessoas teve o seu primeiro contato com algum tipo de programação através dos video games. Conosco não foi diferente a paixão por jogar nos fez se interessar por esse mundo onde tudo é possivel e o limite é a nossa imaginação, então decidimos não apenas criar nossos sonhos, mas dar vida aos sonhos de todos que vivem essa paixão como nós. </p>
+            <a href="#secao-projetos" class="botao">Projetos</a>
         </div>
     </section>
 
     <section id="secao-projetos">
+        <h2>Trabalhos Já concluidos</h2>
         <ul>
             <li class="card">
-                <div class="card-image"><img src="https://images.unsplash.com/photo-1633791583517-c828e6f851a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" alt=""></div>
+                <div class="card-image"><img src="/assets/image/outer_wilds.webp" alt=""></div>
                 <div class="card-info">
-                    <h3>Gemini</h3>
-                    <h4>PHP, Laravel</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h2>Outer Wilds</h2>
+                    <h3>Java, Unity</h3>
+                    <p>Uma aventura espacial.</p>
                 </div>
             </li>
             <li class="card">
-                <div class="card-image"><img src="https://images.unsplash.com/photo-1626362814904-d27009a10da7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt=""></div>
+                <div class="card-image"><img src="/assets/image/valorant.jpg" alt=""></div>
                 <div class="card-info">
-                    <h3>Portifólio</h3>
-                    <h4>HTML, CSS, JAVA</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h2>Valorant</h2>
+                    <h3>Unreal engine 4</h3>
+                    <p>FPS coletivo.</p>
                 </div>
             </li>
             <li class="card">
-                <div class="card-image"><img src="https://images.unsplash.com/photo-1584947114226-950522a87172?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt=""></div>
+                <div class="card-image"><img src="/assets/image/Miles.webp" alt=""></div>
                 <div class="card-info">
-                    <h3>Replica Ifood</h3>
-                    <h4>HTML, CSS, JAVA</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h2>Spider-Man</h2>
+                    <h3> Insomniac's Engine</h3>
+                    <p>Aranha em mundo aberto.</p>
                 </div>
             </li>
         </ul>
     </section>
     <section id="secao-orcamento">
+        
         <form action="">
-            <h3>Orçamento</h3>
-            <label for="qtde">Quantidade de Páginas</label>
+            <div>
+                <h2 id="titulo">Faça um Orçamento</h2>
+                <p id="subtitulo">Complete as informações referente ao projeto</p>
+                <br>
+            </div>
+            <fieldset class="grupo">
+                
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+            
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Qual Engine o jogo deve ser desenvolvido?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Unreal Engine 5
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Unity
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Outra Engine
+                </label>
+            </div>
+
+            <label for="qtde">Quantidade de Fases</label>
             <input type="number" id="qtde" min="1" value="1">
 
-            <label for="js">Precisa de JS?</label>
+            <label for="js">Auxilio na Criação do Roteiro?</label>
             <input type="checkbox" id="js">
 
-            <label for="layout">Precisa de Layout ?</label>
+            <label for="layout">Precisa de Layout da ambientação do mundo?</label>
             <div>
                 <input type="radio" id="layout_sim" name="layout">
-                <label for="layout_sim">Sim, preciso de Layout</label>
+                <label for="layout_sim">Sim, preciso de Layout </label>
 
 
                 <input type="radio" id="layout_nao" name="layout">
                 <label for="layout_nao">Não, já tenho um Layout</label>
             </div>
 
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais da sua Ideia Inicial: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            
+
             <label for="prazo"id ="label_prazo">Prazo</label>
-            <input type="range" id="prazo" min="1" max="10">
+            <input type="range" id="prazo" min="4" max="8">
 
             <output id="output">R$ 0,00</output>
+        
+            <button class="botao1" type="submit" onsubmit="">Concluído</button>
         </form>
     </section>
 
